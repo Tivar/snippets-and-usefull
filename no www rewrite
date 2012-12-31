@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^www.domain.tld [NC]
+RewriteRule ^(.*)$ http://domain.tld/$1 [L,R=301]
